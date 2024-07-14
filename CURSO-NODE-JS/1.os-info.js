@@ -1,0 +1,11 @@
+const os = require('node:os')
+
+console.log('Informacion del sistema operativo:')
+console.log('--------------------')
+console.log('Nombre del sisitema operativo',os.platform())
+console.log('Version del sistema operativo',os.version())   
+console.log('Memoria total (bytes)',os.totalmem())
+console.log('Arquitectura',os.arch())
+console.log('CPUs',os.cpus())
+console.log('Memoria libre',os.freemem() / 1024 / 1024)
+console.log('Emoria toral',os.totalmem() / 1024 / 1024)
